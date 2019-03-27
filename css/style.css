@@ -1,0 +1,151 @@
+#body-index {
+    background-image: url(../images/baggrund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.baggrund {
+    background-color: white;
+    max-width: 500px;
+    height: 900px;
+    margin: 25px;
+}
+
+.baggrund h1 {
+    font-family: helvetica Neue;
+    font-size: 25px; 
+    text-align: center;
+    padding-top: 40px;
+}
+
+.baggrund p {
+    font-family: helvetica Neue;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.baggrund img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 190px;
+}
+
+header {
+
+    width: 100%;
+
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo img {
+    width: 100%;
+}
+
+#logo,
+#main-nav a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#main-nav {
+    display: flex;
+    list-style: none;
+    width: 104%;
+    padding-left: 0;
+    margin-left: -2%;
+}
+
+#main-nav a {
+
+    padding: 0.8em 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    background-color: #57B7CA;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+
+}
+
+#main-nav a:hover {
+    color: black;
+    font-weight: 400;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+ 
+/* MAIN */
+
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        margin-right: 30px;
+
+
+    }
+
+    #logo img {
+        margin: 18px 10px 0;
+        width: 38%;
+
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+        margin-bottom: -70px;
+        
+    }
+    
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav li {
+        
+        border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+        display: block;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+
+}
+
+
