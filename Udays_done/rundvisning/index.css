@@ -1,0 +1,39 @@
+main{
+    background-image: url("../forside/pics/1.jpg");
+    width: 40%;
+    margin: auto;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .arrow{
+        position: absolute;
+        cursor: pointer;
+    }
+
+    #pil_frem {
+        transform: rotate(-90deg) translate(0,-50%);
+        bottom: 20%;
+        left: 50%;
+    }
+
+    #pil_højre{
+        transform: rotate(-0deg) translate(50%);
+        bottom: 13%;
+        left: 50%;
+    }
+
+    #pil_tilbage{
+        transform: rotate(90deg) translate(0,50%);
+        bottom: 5%;
+        left: 50%;
+    }
+
+    #pil_venstre{
+        filter: flipH();
+        transform: scaleX(-1) rotate(0deg) translate(150%);
+        bottom: 13%;
+        left: 50%;
+    }

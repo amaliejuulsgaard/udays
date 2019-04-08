@@ -1,0 +1,466 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Helvetica Neue";
+    background-color: #EDEDED;
+}
+
+/* ---------- HEADER ----------*/
+
+header {
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+header section, header nav{
+    display: none;
+}
+
+#desk_header{
+    width: 80%;
+    margin: auto;
+}
+
+#desk_logo{
+    height: 80px;
+}
+
+#desk-nav{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+
+#desk-nav li{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+#desk-nav li a {
+    color: #474747;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+
+#desk-nav li a:hover, #desk-nav li #nav_pos{
+    color: #57B7CA;
+    border-bottom: 2px solid #57B7CA;
+}
+
+
+/* ---------- MAIN INDEX ----------*/
+
+    #index_main{
+        margin: auto;
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    #index_main section{
+        width: 45%;
+        height: 450px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    #index_main section:hover{
+        cursor: pointer;
+    }
+
+    #index_main section:hover > .tekst{
+        color: #57B7CA;
+    }
+
+    #index_main section .img{
+        background-color: black;
+        height: 350px;
+        width: 100%;
+    }
+
+    .tekst{
+        border: 1px solid #5e5e5e;
+        background-color: white;
+        color: #5e5e5e;
+        padding-left: 15px;
+    }
+
+    #index_main section h1{
+        font-size: 20px;
+    }
+
+/* ---------- MAIN USER EXPERIENCE----------*/
+
+#top{
+    text-align: center;
+    background-image: url("images/bg.png");
+    height: 200px;
+}
+
+#top h1{
+    margin: 0;
+    line-height: 200px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+#user_main{
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 40px;
+}
+
+#user_main section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#user_main h2{
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+
+.UX_info{
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.UX_info h3{
+    position: absolute;
+    left: 35%;
+    margin-top: 0;
+}
+
+.UX_info img{
+    width: 30%;
+}
+
+.UX_info p{
+    text-align: justify;
+    width: 60%;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    line-height: 1.6rem;
+}
+
+#ikoner_container h2{
+    background-color: white;
+    height: 50px;
+    line-height: 50px;
+}
+
+#ikoner{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#ikoner img{
+    width: 180px;
+    height: 180px;
+}
+
+.ikon_sektion,.ikon_sektion h3, .ikon_sektion p{
+    background-color: white;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ikon_sektion h3,.ikon_sektion p{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.ikon_sektion p{
+    font-size: 12px;
+}
+
+.ikon_sektion section{
+    border: 1px solid grey;
+}
+/* ---------- FOOTER ----------*/
+
+footer {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding-bottom: -2%;
+        margin-bottom: -2%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: white;
+    text-align: center;
+    }
+
+    .kontakt h1 {
+        color: black;
+        font-family: 'helvetica neue', sans-serif;
+        font-size: 20pt;
+        font-weight: 400;
+        margin-top: 15%;
+    }
+
+    .kontakt p {
+        font-size: 12pt;
+        color: black;
+    }
+
+    .some h1 {
+        font-size: 20pt;
+        color: black;
+        margin-top: 15%
+    }
+
+    footer hr {
+        width: 300px;
+        margin: 10% 0 10%;
+        background-color: black;
+    }
+
+    footer i {
+        color: black;
+    }
+
+
+@media all and (max-width: 599px) {
+
+    body{
+        background-image: url("images/bg.png");
+    }
+
+/* ---------- HEADER----------*/
+    header {
+        display: block;
+    }
+
+    #desk_header, #desk-nav{
+        display: none;
+    }
+
+    header section, header nav{
+        display: unset;
+    }
+
+    #logo-burger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    #logo img {
+        margin: 18px 10px 0;
+        width: 38%;
+    }
+
+    #toggle{
+        display: none;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+        margin-bottom: -70px;
+    }
+
+    #main-nav {
+        display: none;
+        background-color: #57B7CA;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #main-nav li {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        display: block;
+        font-size: 16px;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    .baggrund {
+        position: absolute;
+        width: 100%;
+        height: 1vw;
+        min-height: 500px;
+        z-index: -1;
+    }
+
+/* ---------- MAIN INDEX----------*/
+
+    #index_main{
+        margin: auto;
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    #index_main section{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    #index_main section .img{
+        background-color: black;
+        height: 230px;
+        width: 100%;
+    }
+
+    .tekst{
+        border: 1px solid grey;
+        background-color: white;
+        color: #474747;
+        padding-left: 15px;
+    }
+
+    #index_main section h1{
+        font-size: 20px;
+    }
+
+/* ---------- MAIN USER EXPERIENCE----------*/
+
+#top{
+    text-align: center;
+    height: 100px;
+}
+
+#top h1{
+    line-height: 100px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+#user_main{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 40px;
+    color: #3d3d3d;
+}
+
+#user_main section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#user_main h2{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.UX_info h3{
+    position: unset;
+}
+
+.UX_info img{
+    width: 100%;
+}
+
+.UX_info p{
+    text-align: justify;
+    position: relative;
+    width: unset;
+    left: unset;
+}
+
+
+
+/* ---------- FOOTER ----------*/
+
+    hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+    footer {
+    display: flex;
+    position: relative;
+    bottom: -30%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #57B7CB;
+    width: 100%;
+
+}
+
+footer i {
+    color: white;
+    padding: 5% 10px;
+    font-size: 30px;
+
+}
+
+
+
+.kontakt p {
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    color: white
+}
+
+.some h1 {
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    color: white;
+}
+
+.some hr {
+    width: 300px;
+
+
+}
+
+.some img {
+    width: 75%;
+    padding-bottom: 20px;
+
+
+}
+
+}

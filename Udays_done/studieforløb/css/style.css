@@ -1,0 +1,736 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue";
+}
+
+header {
+        display: block;
+    }
+
+    #desk_header, #desk-nav{
+        display: none;
+    }
+
+    header section, header nav{
+        display: unset;
+    }
+
+    #logo-burger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    #logo img {
+        margin: 18px 10px 0;
+        width: 38%;
+    }
+
+    #toggle{
+        display: none;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+        margin-bottom: -70px;
+    }
+
+    #main-nav {
+        display: none;
+        background-color: #57B7CA;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #main-nav li {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        display: block;
+        font-size: 16px;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+.baggrund {
+    background-color: white;
+    max-width: 500px;
+    height: 900px;
+    margin: 25px;
+}
+
+.baggrund h1 {
+    font-family: helvetica Neue;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.baggrund p {
+    font-family: helvetica Neue;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.baggrund .tidslinje {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 190px;
+}
+
+.overskrift1 {
+  position: absolute;
+  top: 310px;
+  left: 50px;
+}
+
+.boks1 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 380px;
+  left: 50px;
+}
+
+.boks1 p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.boks2 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 420px;
+  left: 50px;
+}
+
+.boks2 p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.boks3 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 460px;
+  left: 50px;
+}
+
+.boks3 p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.baggrund .video1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 365px;
+    right: 60px;
+}
+
+.overskrift2 {
+  position: absolute;
+  top: 500px;
+  right: 65px;
+}
+
+.boks4 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 570px;
+  right: 50px;
+}
+
+.boks4 p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.boks5 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 610px;
+  right: 50px;
+}
+
+.boks5 p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 4%;
+}
+
+.baggrund .video2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 545px;
+    left: 60px;
+}
+
+.overskrift3 {
+  position: absolute;
+  top: 660px;
+  left: 50px;
+}
+
+.boks6 {
+  width: 110px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 730px;
+  left: 50px;
+}
+
+.boks6 p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.boks7 {
+  width: 110px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 770px;
+  left: 50px; 
+}
+
+.boks7 p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 4%;
+}
+
+.boks8 {
+  width: 110px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 810px;
+  left: 50px; 
+}
+
+.boks8 p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 4%;  
+}
+
+.baggrund .video3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 715px;
+    right: 60px;
+}
+
+.overskrift4 {
+  position: absolute;
+  top: 830px;
+  right: 65px;
+}
+
+.boks9 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 900px;
+  right: 50px; 
+}
+
+.boks9 p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 4%;   
+}
+
+.boks10 {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 940px;
+  right: 50px; 
+}
+
+.boks10 p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 3%;
+  padding-top: 4%; 
+}
+
+.baggrund .video4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 880px;
+    left: 60px;
+}
+
+.tidslinje2{
+   display: none;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: -30%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #57B7CB;
+    width: 100%;
+
+
+
+}
+
+footer i {
+    color: white;
+    padding: 5% 10px;
+    font-size: 30px;
+
+}
+
+
+
+.kontakt p {
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    color: white
+}
+
+.some h1 {
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    color: white;
+}
+
+.some hr {
+    width: 300px;
+
+
+}
+
+.some img {
+    width: 75%;
+    padding-bottom: 20px;
+
+
+}
+
+@media all and (min-width: 599px) {
+
+    /*HEADER NAV*/
+header {
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+#logo-burger, header nav{
+    display: none;
+}
+
+#desk_header, #desk-nav{
+    display: block;
+}
+
+#desk_header{
+    width: 80%;
+    margin: auto;
+}
+
+#desk_logo{
+    height: 80px;
+}
+
+#desk-nav{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+
+#desk-nav li{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+#desk-nav li a {
+    color: #474747;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+
+#desk-nav li a:hover, #desk-nav li #nav_pos{
+    color: #57B7CA;
+    border-bottom: 2px solid #57B7CA;
+}
+
+#body-index {
+    background-image: url(../images/baggrund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+
+   
+.baggrund {
+    background-color: white;
+    max-width: 1500px;
+    height: 1100px;
+    margin: 25px;
+    margin-left: 125px;
+}
+    
+.baggrund h1 {
+    font-family: helvetica Neue;
+    font-size: 50px; 
+    padding-top: 40px;
+}
+
+.baggrund p {
+    font-family: helvetica Neue;
+    font-size: 25px;
+}
+
+.tidslinje2 {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 455px;
+    }
+    
+.baggrund .tidslinje {
+        display: none;
+    }
+
+.overskrift1 {
+  position: absolute;
+  top: 500px;
+  left: 490px;
+    font-size: 25px;
+}
+
+.boks1 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 595px;
+  left: 490px;
+}
+    
+.boks1 p {
+    font-size: 25px;
+}
+
+.boks2 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 645px;
+  left: 490px;
+}
+    
+.boks2 p {
+    font-size: 25px;
+}
+
+.boks3 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 695px;
+  left: 490px;
+}
+
+.boks3 p {
+    font-size: 25px;
+}
+    
+.baggrund .video1 {
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 585px;
+    right: 495px;
+}
+
+.overskrift2 {
+  position: absolute;
+  top: 710px;
+  right: 530px;
+}
+
+.boks4 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 800px;
+  right: 500px;
+}
+
+.boks4 p {
+    font-size: 25px;
+}
+
+.boks5 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 850px;
+  right: 500px;
+}
+
+.boks5 p {
+  font-size: 25px;
+}
+
+.baggrund .video2 {
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 765px;
+    left: 485px;
+}
+
+.overskrift3 {
+  position: absolute;
+  top: 900px;
+  left: 490px;
+}
+
+.boks6 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 990px;
+  left: 490px;
+}
+
+.boks6 p {
+    font-size: 23px;
+}
+
+.boks7 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 1040px;
+  left: 490px; 
+}
+
+.boks7 p {
+  font-size: 25px;
+}
+
+.boks8 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 1090px;
+  left: 490px; 
+}
+
+.boks8 p {
+  font-size: 25px; 
+}
+
+.baggrund .video3 {
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 950px;
+    right: 500px;
+}
+
+.overskrift4 {
+  position: absolute;
+  top: 1100px;
+  right: 530px;
+}
+
+.boks9 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 1190px;
+  right: 500px; 
+}
+
+.boks9 p {
+  font-size: 25px;   
+}
+
+.boks10 {
+  width: 160px;
+  height: 45px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 1240px;
+  right: 500px; 
+}
+
+.boks10 p {
+  font-size: 25px;
+}
+
+.baggrund .video4 {
+    width: 165px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 1150px;
+    left: 485px;
+}
+
+
+    
+
+/*------------- FOOTER -------------*/
+
+footer {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding-bottom: -2%;
+        margin-bottom: -2%;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: white;
+    text-align: center;
+    }
+
+    .kontakt h1 {
+        color: black;
+        font-family: 'helvetica neue', sans-serif;
+        font-size: 20pt;
+        font-weight: 400;
+        margin-top: 15%;
+    }
+
+    .kontakt p {
+        font-size: 12pt;
+        color: black;
+    }
+
+    .some h1 {
+        font-size: 20pt;
+        color: black;
+        margin-top: 15%
+    }
+
+    footer hr {
+        width: 300px;
+        margin: 10% 0 10%;
+        background-color: black;
+    }
+
+    footer i {
+        color: black;
+    }
+
+}
