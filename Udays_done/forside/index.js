@@ -4,7 +4,7 @@ $(function() {
     $("button").on('click', function () {
         $(".baggrund").css({"background-image": "url(pics/1.jpg)","background-size": "contain"});
         $("button").css({"display": "none"});
-        $(".container").css({"display": "none"})
+        $(".container").css({"display": "none"});
         $(".arrow").css("display", "block");
     });
 
@@ -169,5 +169,40 @@ $(function() {
                 break;
         }
     });
+
+    function hentData(url, callback_Funktion) {
+       var xhttp = new XMLHttpRequest();
+       xhttp.open("GET", url, true);
+       xhttp.send();
+
+       xhttp.onreadystatechange = function () {
+           if (this.readyState === 4 && this.status === 200){
+               callback_Funktion(this);
+           }
+       };
+   }
+   function visData(jsonData) {
+       var jsonElementer = JSON.parse(jsonData.responseText);
+       var divIndhold = "";
+
+
+           var temp = jsonElementer.main.temp;
+           var wind = jsonElementer.wind.speed;
+           var ikon = jsonElementer.weather[0].icon;
+
+
+
+           divIndhold += '<p> Temperature is: ' + temp + '</br>Wind speed is: ' + wind + '</p>';
+           var ikon_img = '<img src="pics/'+ikon+'.png" alt="ikonbeskrivelse">';
+
+           if (temp<10){
+               advice = '<p> Det er under 10 grader, husk overtøjet</p>'
+           }
+
+      $("#indhold").html(divIndhold + ikon_img + advice);
+   }
+
+
+   hentData("http://api.openweathermap.org/data/2.5/weather?id=2624647&APPID=86f3209eee579bf39ad64b0b11861883&units=metric", visData);
 
 });

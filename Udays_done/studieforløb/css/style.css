@@ -71,7 +71,7 @@ header {
 
 .baggrund {
     background-color: white;
-    max-width: 500px;
+    max-width: 400px;
     height: 900px;
     margin: 25px;
 }
@@ -167,7 +167,7 @@ header {
 
 .overskrift2 {
   position: absolute;
-  top: 500px;
+  top: 400px;
   right: 65px;
 }
 
@@ -385,8 +385,6 @@ footer i {
 .some img {
     width: 75%;
     padding-bottom: 20px;
-
-
 }
 
 @media all and (min-width: 599px) {
@@ -452,11 +450,9 @@ header {
     background-attachment: fixed;
 }
 
-
-   
 .baggrund {
     background-color: white;
-    max-width: 1500px;
+    max-width: 1400px;
     height: 1100px;
     margin: 25px;
     margin-left: 125px;
@@ -479,16 +475,16 @@ header {
     left: 50%;
     transform: translate(-50%);
     width: 455px;
-    }
+}
     
 .baggrund .tidslinje {
-        display: none;
-    }
+    display: none;
+}
 
 .overskrift1 {
   position: absolute;
-  top: 500px;
-  left: 490px;
+  top: 300px;
+  left: 420px;
     font-size: 25px;
 }
 
@@ -498,8 +494,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 595px;
-  left: 490px;
+  top: 395px;
+  left: 420px;
 }
     
 .boks1 p {
@@ -512,8 +508,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 645px;
-  left: 490px;
+  top: 445px;
+  left: 420px;
 }
     
 .boks2 p {
@@ -526,8 +522,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 695px;
-  left: 490px;
+  top: 495px;
+  left: 420px;
 }
 
 .boks3 p {
@@ -539,14 +535,14 @@ header {
     height: 160px;
     position: absolute;
     z-index: 1;
-    top: 585px;
-    right: 495px;
+    top: 385px;
+    right: 395px;
 }
 
 .overskrift2 {
   position: absolute;
-  top: 710px;
-  right: 530px;
+  top: 510px;
+  right: 430px;
 }
 
 .boks4 {
@@ -555,8 +551,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 800px;
-  right: 500px;
+  top: 600px;
+  right: 400px;
 }
 
 .boks4 p {
@@ -569,8 +565,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 850px;
-  right: 500px;
+  top: 650px;
+  right: 400px;
 }
 
 .boks5 p {
@@ -582,14 +578,14 @@ header {
     height: 160px;
     position: absolute;
     z-index: 1;
-    top: 765px;
-    left: 485px;
+    top: 565px;
+    left: 415px;
 }
 
 .overskrift3 {
   position: absolute;
-  top: 900px;
-  left: 490px;
+  top: 700px;
+  left: 420px;
 }
 
 .boks6 {
@@ -598,8 +594,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 990px;
-  left: 490px;
+  top: 790px;
+  left: 420px;
 }
 
 .boks6 p {
@@ -612,8 +608,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 1040px;
-  left: 490px; 
+  top: 840px;
+  left: 420px;
 }
 
 .boks7 p {
@@ -626,8 +622,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 1090px;
-  left: 490px; 
+  top: 890px;
+  left: 420px;
 }
 
 .boks8 p {
@@ -639,14 +635,14 @@ header {
     height: 160px;
     position: absolute;
     z-index: 1;
-    top: 950px;
-    right: 500px;
+    top: 750px;
+    right: 400px;
 }
 
 .overskrift4 {
   position: absolute;
-  top: 1100px;
-  right: 530px;
+  top: 900px;
+  right: 430px;
 }
 
 .boks9 {
@@ -655,8 +651,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 1190px;
-  right: 500px; 
+  top: 990px;
+  right: 400px;
 }
 
 .boks9 p {
@@ -669,8 +665,8 @@ header {
   border: 1px solid black;
   box-sizing: border-box;
   position: absolute;
-  top: 1240px;
-  right: 500px; 
+  top: 1040px;
+  right: 400px;
 }
 
 .boks10 p {
@@ -682,8 +678,8 @@ header {
     height: 160px;
     position: absolute;
     z-index: 1;
-    top: 1150px;
-    left: 485px;
+    top: 950px;
+    left: 415px;
 }
 
 
